@@ -35,6 +35,26 @@
   }
 }
 
+@media (max-width: 1800px) {
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    gap: 0rem !important;
+    margin: 0;
+    /* background: white; */
+  }  
+  .createProposalForm {
+    /* display: none; */
+    position: static;
+    height: max-content;
+  }
+  .proposals {
+    margin: 0rem !important; 
+  }
+}
+
 .formTitle {
   font-size: 2rem;
   font-weight: bold;

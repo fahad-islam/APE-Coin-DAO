@@ -5,7 +5,7 @@ import { ApeDaoContext } from '../context/context'
 import truncateEthAddress from 'truncate-eth-address'
 
 const ProposalCard = ({ proposal }) => {
-  const { address, voteFor, executeProposal } = useContext(ApeDaoContext)
+  const { currentUserAddress, voteFor, executeProposal } = useContext(ApeDaoContext)
   const [statusText, setStatusText] = useState('')
   const [statusColor, setStatusColor] = useState('#fff')
 

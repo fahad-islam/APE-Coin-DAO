@@ -11,8 +11,8 @@ const Header = () => {
         ApeCoin DAO{' '}
         <Image
           className='logo'
-          height={80}
-          width={80}
+          height={60}
+          width={60}
           src={
             'https://cdn.stamp.fyi/space/apecoin.eth?s=160&cb=ec19915e02892e80'
           }

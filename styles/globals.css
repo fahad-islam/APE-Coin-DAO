@@ -3,9 +3,20 @@
   padding: 0;
   margin: 0;
 }
+
 body {
   height: 100vh;
   width: 100vw;
   background-color: #211f24;
   overflow-x: hidden;
+}
+
+html {
+  font-size: clamp(.3rem, 0.75rem + .5vw, .8rem);
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: clamp(.3rem, 0.75rem + .5vw, .8rem);
+  }
 }

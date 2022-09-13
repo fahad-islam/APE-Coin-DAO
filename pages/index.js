@@ -9,13 +9,13 @@ import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/ReactToastify.min.css";
 
 
-const Home: NextPage = () => {
+const Home = () => {
     const [proposals, setProposals] = useState(null)
     const [proposalInput, setProposalInput] = useState('')
     const {
         getAllProposals,
         isExecutable,
-        address,
+        currentUserAddress,
         createProposal,
     } = useContext(ApeDaoContext)
 
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
     }, [])
     return (
         <div className={styles.wrapper}>
-            {address ? (
+            {currentUserAddress ? (
                 <>
                     <Header />
 
